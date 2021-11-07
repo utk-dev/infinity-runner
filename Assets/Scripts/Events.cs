@@ -7,6 +7,7 @@ public class Events : MonoBehaviour
 {
     public void replayGame()
     {
+        FindObjectOfType<AudioManager>().PlaySound("MainTheme");
         SceneManager.LoadScene("Level");
     }
 
